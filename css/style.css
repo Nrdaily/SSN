@@ -807,7 +807,7 @@ summary:focus {
   .has-scrollbar > .process_item { min-width: calc(33.33% - 16.66px); }
 
   .stats{
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
   }
 }
