@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Statistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+  </head>
+  <body oncontextmenu="return false;">
+    <nav class="navbar">
+      <a href="/index.html" class="logo">Id</a>
+
+      <ul class="nav-link">
+        <li><a href="/index.html" title="home">Home</a></li>
+        <li><a href="/products.html" title="Products">products</a></li>
+        <li><a href="blog.html" title="blog">Blog</a></li>
+        <li><a href="/order.html" title="order">order</a></li>
+        <li><a href="/contact.html" title="contact">Contact us</a></li>
+        <li><a href="/about.html" title="About us">About us</a></li>
+        <li><a href="/cart.html" class="cart-btn" title="cart button">
+          <span id="cartAmount" class="cart-count">0</span>
+          <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+    <button class="nav-toggle-btn" id="nav-toggle-open">
+        <span><i class="fas fa-bars"></i></span>
+    </button>
+    <button class="nav-toggle-btn" id="nav-toggle-close">
+        <span><i class="fas fa-times"></i></span>
+    </button>
+    </nav>
+    <section class="products" id="products">
+      <h1 class="heading">Featured licenses</h1>
+      <div class="products-con">
+        <div class="image-container">
+          <span style="--i: 1">
+            <video muted autoplay loop src="video/VID-20240205-WA0000.mp4"></video>
+          </span>
+          <span style="--i: 2">
+            <video muted autoplay loop src="video/VID-20240205-WA0033.mp4"></video>
+          </span>
+          <span style="--i: 3">
+            <video muted autoplay loop src="video/VID-20240205-WA0034.mp4"></video>
+          </span>
+          <span style="--i: 4">
+            <video muted autoplay loop src="video/VID-20240205-WA0035.mp4"></video>
+          </span>
+          <span style="--i: 5">
+            <video muted autoplay loop src="video/VID-20240205-WA0036.mp4"></video>
+          </span>
+          <span style="--i: 6">
+            <video muted autoplay loop src="video/VID-20240205-WA0037.mp4"></video>
+          </span>
+          <span style="--i: 7">
+            <video muted autoplay loop src="video/VID-20240205-WA0038.mp4"></video>
+          </span>
+          <span style="--i: 8">
+            <video muted autoplay loop src="video/VID-20240205-WA0039.mp4"></video>
+          </span>
+        </div>
+        <div class="btn-container">
+          <button class="btn" id="prev">Prev</button>
+          <button class="btn" id="next">Next</button>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="top_about_content">
+          <h1 class="tac heading">Our Company Overview</h1>
+          <p class="tac"><b>Founding: </b>Established in <strong>2010</strong></p>
+          <p class="tac"><b>Specialization: </b>U.S., Canada, Mexico, and Europe, ranking among the top three in the industry</p>
+          <p class="tac"><b>Sales (2023): </b>Exceeded <strong>$2 billion,</strong> with a customer volume exceeding <strong>100,000</strong></p>
+          <p class="tac"><b>Growth: </b>Fastest growth rate in the United States; <strong>256% increase</strong> in customers under 28 years old</p>
+      </div>
+      <div class="image">
+        <img src="img/c1.de8b5b7f.png" alt="">
+      </div>
+        <hr>
+        <br>
+        <h1 class="tac heading">Our Company Overview</h1>
+        <div class="image">
+            <img src="img/c1.de8b5b7f.png" alt="">
+        </div>
+        <div class="process em">
+            <div class="process_item">
+              <span class="progress_icon"><i class="fas fa-group"></i></span>
+              <h3>Employees</h3>
+              <p>500 in production, 80 in sales and customer service</p>
+            </div>
+            <div class="process_item">
+              <span class="progress_icon"><i class="fas fa-truck"></i></span>
+              <h3>Manufacturing Facilities</h3>
+              <p>China, Vietnam, India</p>
+            </div>
+            <div class="process_item">
+              <span class="progress_icon"><i class="fas fa-truck"></i></span>
+              <h3>Geographical Presence</h3>
+              <p>Mainly in the United States, Canada, Mexico, and the Philippines!</p>
+            </div>
+        </div>
+
+        <h1 class="tac heading">Our Products</h1>
+        <div class="process about_products purpose">
+            <div class="process_item">
+              <span class="progress_icon"><i class="fas fa-group"></i></span>
+              <h3>DL</h3>
+            </div>
+            <div class="process_item">
+              <span class="progress_icon"><i class="fas fa-truck"></i></span>
+              <h3>SSN</h3>
+            </div>
+            <div class="process_item">
+              <span class="progress_icon"><i class="fas fa-truck"></i></span>
+              <h3>Green Card</h3>
+            </div>
+            <div class="process_item">
+              <span class="progress_icon"><i class="fas fa-truck"></i></span>
+              <h3>Parking Permit</h3>
+            </div>
+        </div>
+
+        <h1 class="tac heading">Usage Scenarios</h1>
+        <div class="usage">
+            <div class="flex">
+                <div class="image">
+                    <img src="img/au3.5c475b4b.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Shopping</h2>
+                    <p>Purchase and resale of cigarettes,alcohol,and marijuana</p>
+                    <span></span>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="image">
+                    <img src="img/au3.5c475b4b.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Recreational Use</h2>
+                    <p>Games,bars,clubs,casinos, concerts,adult performances</p>
+                    <span></span>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="image">
+                    <img src="img/au3.5c475b4b.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>KYL Authentication</h2>
+                    <p>Bitcoin wallet verification,VIP discounts,social media account opening,game account registration,credit card application,and bank account opening</p>
+                    <span></span>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="image">
+                    <img src="img/au3.5c475b4b.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Work-Related</h2>
+                    <p>Rentals,SSN,green card,temporary documents,immigration,stud y abroad,renting apartments,cars,finding jobs</p>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="tac heading">Company History</h1>    
+        <div class="history process">
+            <div class="process_item">
+                <span>2010</span>
+                <p>Established U.S. sales company and a factory in China</p>
+            </div>
+            <div class="process_item">
+                <span class="right">2015</span>
+                <p>Established Vietnam factory for processing, packaging, and shipping logistics</p>
+            </div>
+            <div class="process_item">
+                <span>2018</span>
+                <p>Established India factory for product assembly; set up a customer service team in the Philippines with 24-hour online support</p>
+            </div>
+            <div class="process_item">
+                <span class="right">2021</span>
+                <p>Upgraded production line to high-end DL production; became industry leader in product updates; developed OEM business; expanded global distributor channels</p>
+            </div>
+        </div>
+
+        <h1 class="tac heading">Company Purpose</h1>
+        <div class="purpose process">
+            <div class="process_item">
+                <h3>Where amazing happens</h3>
+            </div>
+            <div class="process_item">
+                <h3>Break the worldly rules</h3>
+            </div>
+            <div class="process_item">
+                <h3>Enjoy a free life</h3>
+            </div>
+        </div>
+        <h1 class="tac heading">FAQ</h1>
+        <div class="faq-container">
+            <details>
+              <summary>
+                <span class="faq-title">
+                    1.How long does it take about my scannable card arrangement?
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">
+                The process time limit,for reference only,NOT 100%:
+                - Fast shipping: 5 days for production, and 1 week for delivery
+                - Free shipping: 5 days for production, and 2 weeks for delivery
+                Note: urgent order for priority processing, please contact us!
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">
+                    2. How to make my own scannable card?
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">
+                Place an order on Idlord.com
+                Step 1: Click on the ORDER section and place orders
+                Step 2: Submit the info, photo, and signature For the card
+                Step 3: Finish the payment
+                Step 4: Get the Tracking number
+                Step 5: Wait for the Card</div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">3. Are all the card produce by IDLORD are scannable?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">Of course! The card producing by IDLORD are featuring barcodes on the back correct holograms on them and look identical to its authentic ones. And also we will using BCS card Scanner to verify every card are scannable before shipping.
+                No matter APP or bend test and the blacklight test we can pass.
+                </div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">4. Can I get Refund or Reprint?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">We provide reprint identity card only in our scannable card does not match your requirements or any mishandling is detected on our part.
+                We have a satisfied customer base of thousands, and we have high tech operation team to ensure each card will be fulfill your requirements before shopping.
+                For Refunds will be provided in case you do not receive for our fault.</div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">5. What kinds of payment methods about IDlord scannable card or Green or SS number card?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">
+                            
+                We accept Credit/Debit Card, Btcs
+    
+                Credit/Debit Card
+                Step 1: Enter your card number
+                Step 2: Select the cards, expired Date
+                Step 3: Enter The CVC number
+    
+                BTCs
+                Pay from a BTCs wallet app on your smartphone
+                Step 1: Login Coinbase Wallet app on device.
+                Step 2: Enter the amount.
+                Step 3: Select BTCs
+                Step 4: Tap Next to Scan QR code or enter the exact recipient address.
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">6. What are you suggest info printed on the ID?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">Sure, we can send us your address, DOB, Signature, and DL number full name for you. Finally make sure to submit accurate info and photos.</div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">7. Different between IDLORD’s scannable card and the real card?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">All the cards producing by IDLORD are LEGIT, scannable, identical to real thing, with barcode, UV pattern and hologram layer. There is no different between two cards.</div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">8. Are you legit and won't scam me?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">We Providing 24/7 online customer service the fastest answer to your any scannable ids questions
+                100% scannable, blend, UV, hologram, micro-text etc.
+                Keeping update in each time of Change from State with professional industrial printing and efficient operation team.
+                
+                But please make sure you are ordering on www.idlord.com we are the one and only one site.</div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">9. Can you provide free duplicates for us?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">Yes, all orders from us will be come with free duplicates for each client.</div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">10. Can I change my delivery address if I already placed the order?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">Please make sure that your card has NOT shipped yet. If it has, there is nothing we can do.</div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">11. How to provide right photo for the card?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">1. selfie.
+                2. Background we can edit for you.
+                3. Avoid eyes looking down, instead, looking towards to the camera.
+                4. without eyewear is allowed except eyeglasses</div>
+            </details>
+            <details>
+              <summary>
+                <span class="faq-title">12. What to do when the package is returned?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </summary>
+              <div class="faq-content">Please contact the support for help.
+                The package will be resend when is returned for our fault.
+                Instead, we will not send any more.</div>
+            </details>
+        </div>
+    </section>
+
+    <footer></footer>
+    <script src="js/app.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>
