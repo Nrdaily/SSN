@@ -78,7 +78,7 @@ footer.innerHTML =`
         <div class='social-links'>
           <img src="img/payment.png">
         </div>
-        <small>. <span id="year"></span>, All rights reserved</small>
+        <small>SSN-DL SHOP. <span id="year"></span>, All rights reserved</small>
     </div>
 </div>
 `;

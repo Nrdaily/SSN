@@ -73,8 +73,6 @@ countersEl.forEach((counterEl) => {
 
 // Selecting form and input elements
 const form = document.querySelector("form");
-const passwordInput = document.getElementById("password");
-const passToggleBtn = document.getElementById("pass-toggle-btn");
 
 // Function to display error messages
 const showError = (field, errorText) => {
@@ -98,7 +96,6 @@ const handleFormData = (e) => {
     // Getting trimmed values from input fields
     const fullname = fullnameInput.value.trim();
     const email = emailInput.value.trim();
-    const password = passwordInput.value.trim();
     const date = dateInput.value;
     const gender = genderInput.value;
 
@@ -116,9 +113,6 @@ const handleFormData = (e) => {
     if (!emailPattern.test(email)) {
         showError(emailInput, "Enter a valid email address");
     }
-    if (password === "") {
-        showError(passwordInput, "Enter your password");
-    }
     if (date === "") {
         showError(dateInput, "Select your date of birth");
     }
@@ -133,12 +127,6 @@ const handleFormData = (e) => {
     // Submitting the form
     form.submit();
 }
-
-// Toggling password visibility
-passToggleBtn.addEventListener('click', () => {
-    passToggleBtn.className = passwordInput.type === "password" ? "fa-solid fa-eye-slash" : "fa-solid fa-eye";
-    passwordInput.type = passwordInput.type === "password" ? "text" : "password";
-});
 
 // Handling form submission event
 form.addEventListener("submit", handleFormData);
