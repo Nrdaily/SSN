@@ -9,13 +9,142 @@
   #REUSED STYLE
 \*-----------------------------------*/
 
+
+.payment_tags{
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  width: 100%;
+  /* background: #cacaca79; */
+  /* backdrop-filter: blur(20px); */
+}
+.payment_info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 400px;
+  height: 400px;
+  background: #ffffff40;
+  backdrop-filter: blur(20px);
+}
+.payment_info .image{
+  border-radius: 3px;
+  width: 250px;
+}
+.payment_info .image img{
+  border-radius: 3px;
+}
+.payment_info .tag{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  /* margin-top: 1rem; */
+  padding: 1rem;
+  background: #cacaca79;
+  backdrop-filter: blur(20px);
+}
+.payment_info .tag .clipboad{
+  position: absolute;
+  right: 15px;top: 0;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.payment_info .tag  .toolTip{
+  margin-top: 20px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(#b41818, #a01616);
+  color: #f2f2f2;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.payment_info .tag  .toolTip.show{
+  margin-top: -80px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.toolTip::after{
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: linear-gradient(#b41818, #a01616);
+  top: 30px;left: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.numbering{
+  list-style-type: disc !important;
+}
+
+
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #290f0f;
+  color: white;
+  padding: 1em 0.3em;
+}
+
+#search-container button {
+  padding: 0.5em 2em;
+  margin-left: 1em;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
 .container { padding-inline: 15px; }
 
-
+.hide {
+  display: none;
+}
+table tr{
+  border-bottom: 1px solid #f2f2f2;
+}
 .img-cover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.pay_box.finish{
+  padding: 1rem;
+  margin-top: 50px;
+  box-shadow: 0 5px 5px rgba(255, 255, 255, 0.3);
+  background: #32323279;
+  backdrop-filter: blur(15px);
+}
+.checkList input{
+  width: 20px;
+}
+.pay_box.finish h2{
+  color: rgb(5, 170, 5);
+}
+
+#imgBox{
+  height: 80px;
+  width: 80px;
+  background: #f2f2f279;
+  border-radius: 3px;
+}
+.pay_box p{
+  opacity: 0.8;
+}
+.pay_box b{
+  opacity: 1;
+  font-weight: 800;
 }
 
 #shop{
@@ -82,6 +211,7 @@
   bottom: 0px;
 }
 .wrapper .title{
+  text-transform: capitalize;
   font-size: 18px;
   font-weight: 500;
 }
@@ -187,7 +317,7 @@
   cursor: pointer;
 }
 .wrapper .btns button a{
-    color: #fff;
+  color: #fff;
 }
 
 
@@ -196,13 +326,28 @@
 /*-----------------------------------*\
   #MAIN CONTENT
 \*-----------------------------------*/
-
+.payment_details.fixed{
+  position: sticky;
+  top: 3%;right: 0;
+}
+.payment_details{
+  margin-top: 80px;
+}
+.payment_details .flex_jcsb{
+  padding: 1rem;
+  gap: 20px;
+}
+.containe.top{
+  padding: 0 1rem;
+  align-items: start !important;
+}
 .product-slides {
   position: relative;
   margin-inline: -15px;
   overflow: hidden;
 }
-.cart_section section{
+.cart_section, .containe {
+  display: grid;
   color: var(--text-gray);
   flex-basis: 50%;
   min-height: 100vh;
@@ -217,11 +362,6 @@
   max-height: 300px;
 }
 
-.product-banner {
-  min-width: 100%;
-  max-height: 300px;
-}
-  
 .slide-btn {
   position: absolute;
   top: 50%;
@@ -256,6 +396,7 @@
 
 .product-content .product-title {
   color: var(--text-gray);
+  text-transform: capitalize;
   font-size: 2.5rem;
   line-height: 1.1;
   margin-block: 12px 18px;
@@ -308,18 +449,29 @@
   position: absolute;
   top: 5px;right: 10px;
 }
-  
-.add-cart-btn {
+.cart_section button{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  width: 100%;
-  background-color: var(--red);
-  color: var(--white);
-  font-weight: var(--fw-500);
+  text-transform: capitalize;
+  height: 20px;
+  background: rgb(37, 140, 37);
+  color: white;
   padding: 18px;
   border-radius: 10px;
+  gap: 15px;
+}
+.btns_{
+  justify-content: center;
+}
+.cart_section button:nth-child(2){
+  background-color: var(--red);
+}
+  
+.add-cart-btn {
+  width: 100%;
+  color: var(--white);
+  font-weight: var(--fw-500);
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
 }
@@ -347,6 +499,10 @@
     max-width: 400px;
     margin-inline: auto;
   }
+  .cart_section, .containe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    
   
   /**
    * PRODUCT

@@ -49,20 +49,16 @@ let generateCartItems = () => {
       <span class="product-subtitle" style="cursor: pointer;"><i onclick="removeItem(${id})" class="fas fa-trash"></i></span>
         <div class="flex">
           <h1 class="h1 product-title">${search.name}</h1>
-          <span class="price price-abs" data-total-price>$ ${search.realPrice}</span>
+          <span data-type-price class="price price-abs" data-total-price>$ ${search.realPrice}</span>
         </div>
             <div class="name colour-name">Category / Type</div>
             <div class="colour-value">
-                <select name="category" id="category">
-                <option value="Category">Category</option>
-                <option value="Driving License">Driving License</option>
-                <option value="ID Card">ID Card</option>
-                </select>
-                <select name="type" id="type">  
-                <option value="Type">Type</option>
-                <option value="Fake ID">FAke ID</option>
-                <option value="Real ID">Real ID</option>
-                </select>
+            <select name="category" data-category id="category">
+            <option value="" selected disabled>Category</option>
+          </select>
+          <select name="type" data-type id="type">  
+            <option value="" selected disabled>Type</option>
+          </select>
             </div>
         <div class="btn-group">
           <div class="counter-wrapper">
@@ -161,22 +157,108 @@ let TotalAmount = () => {
       .reduce((x, y) => x + y, 0);
     // console.log(amount);
     label.innerHTML = `
-    <br><br><br>
-    <h2 class="heading">Total Bill : $ ${amount}</h2>
-    <a href="#checkout">
-    <button class="add-cart-btn checkout">
-      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-      <span class="span">Checkout</span>
-    </button>
-    </a>
-      <br>
-    <button onclick="clearCart()" class="removeAll add-cart-btn">Clear Cart</button>
+    <h3>Cart Details</h3>
+    <hr>
+    <div class="flex_jcsb">
+      <p>SubTotal :</p>
+      <h2 class="total_bill">$ ${amount}</h2>
+    </div>
+    <hr>
+    <div class="flex_jcsb">
+      <h2>Shipping</h2>
+      <p class="tar">7 days shipping: <b>$100.00</b><br>
+        Shipping options will be updated during checkout.</p>
+    </div>
+    <hr>
+    <div class="flex_jcsb">
+      <p>Total :</p>
+      <h2 class="total_bill">$ ${amount + 100}</h2>
+    </div>
+    <hr>
+    <div class="flex btns_">
+      <a href="order.html">
+      <button class="checkout">
+        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+        <span class="span">PROCEED TO CHECKOUT</span>
+      </button>
+      </a>
+      <button onclick="clearCart()" class="removeAll">Clear Cart</button>
+    </div>  
     `;
   } else return;
 };
 
 TotalAmount();
 
+
+const category = ["Driving License", "ID Card"];
+const DLtypes = ['Fake DL', 'Real DL'];
+const IDtypes = ['Fake ID', 'Real ID'];
+const prices = [900, 120];
+
+const idCategory = document.querySelectorAll('[data-category]');
+const idType = document.querySelectorAll('[data-type]');
+const typePrice = document.querySelectorAll('[data-type-price]');
+
+category.forEach(function addCategory(item) {
+  idCategory.forEach((id) => {
+    let option = document.createElement('option');
+    option.text = item;
+    option.value = item;
+    id.appendChild(option);
+  })
+})
+idCategory.forEach((id) => {
+  id.onchange = function() {
+    idType.forEach((id) => {
+      id.innerHTML = "<option></option>";
+    })
+    if (this.value == "Driving License") {
+      addToIdType(DLtypes)
+    }
+    if (this.value == "ID Card") {
+      addToIdType(IDtypes)
+    }
+  }
+})
+
+function addToIdType(arr){
+  arr.forEach(function (item){
+    idType.forEach((id) => {
+      let option = document.createElement('option');
+      option.text = item;
+      option.value = item;
+      id.appendChild(option)
+    })
+  })
+}
+
+idType.forEach((id) => {
+  id.onchange = function() {
+    if (this.value == "Fake ID" || this.value == "Fake DL") {
+      typePrice.forEach(price => {
+        price.innerText = prices[1];
+      })
+    }
+    if (this.value == "Real DL" || this.value == "Real ID") {
+      typePrice.forEach(price => {
+        price.innerText = prices[0];
+      })
+    }
+  }
+})
+
+
+function addToIdType(arr){
+  arr.forEach(function (item){
+    idType.forEach((id) => {
+      let option = document.createElement('option');
+      option.text = item;
+      option.value = item;
+      id.appendChild(option)
+    })
+  })
+}
 
 
 /**

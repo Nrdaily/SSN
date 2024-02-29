@@ -4,16 +4,43 @@
     --primary: #DD946F ;
     --secondary: #261E5A;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.heading{
+    color: var(--white);
+    margin: 50px 0;
 }
 
 body {
     font-family: Mulish;
 }
+
+.error_massage{
+    position: fixed;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 500px;
+    height: 90px;
+    background: #e879799a;
+    backdrop-filter: blur(20px);
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+  .error_massage.active{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .error_massage p{
+    opacity: 0.89;
+  }
+  .error_massage .x_error_massage {
+    position: absolute;
+    top: 5px;right: 10px;
+    cursor: pointer;
+  }
 
 .background {
     background-color: #261e5a81;
@@ -46,16 +73,20 @@ body {
 
 .articles article a {
     display: inline-flex;
-    color: var(--primary);
+    color: var(--red);
     text-decoration: none;
 }
 
 
 .articles article h2 {
     margin: 0 0 18px 0;
-    font-size: 1.6rem;
-    color: var(--secondary);
+    font-size: 1.8rem;
+    color: var(--white);
     transition: color 0.3s ease-out;
+}
+.articles article p{
+    color: var(--white);
+    opacity: 0.7;
 }
   
   
@@ -67,7 +98,8 @@ body {
   
 .article-preview {
     padding: 24px;
-    background: white;
+    background: rgba(255, 255, 255, 0.524);
+    backdrop-filter: blur(30px);
 }
 
 .articles figure {
@@ -86,4 +118,3 @@ body {
 .articles article:hover img {
     transform: scale(1.5); 
 }
-
