@@ -66,97 +66,100 @@
     </section>
 
     <section class="containe  flex_jcsb top">
-      <form action="#"> 
+      <form action="#" id="form" method="post">   
         <h2>Billing Details</h2>
-        <div class="form-group">
+        <div class="form-group product_select">
           <label for="fullname">Product Select</label>
-            <select name="state" id="input-state" class="custom-select form-control" style="color:#999999;">
-                <option value="">Select</option>
-                <option value="86">US - Green Card</option>
-                <option value="83">US - SSN</option>
-                <option value="84">California - Handicap Parking Permit</option>
-                <option value="82">New York - Handicap Parking Permit</option>
-                <option value="76" selected="selected">Canada - British Columbia DL</option>
-                <option value="69">Canada - Ontario DL</option>
-                <option value="50">Arizona DL</option>
-                <option value="53">California DL</option>
-                <option value="54">Connecticut DL</option>
-                <option value="55">Delaware DL</option>
-                <option value="77">Florida DL</option>
-                <option value="78">Georgia DL</option>
-                <option value="57">Illinois DL</option>
-                <option value="58">Indiana DL</option>
-                <option value="59">Kansas DL</option>
-                <option value="61">Maryland DL</option>
-                <option value="60">Massachusetts DL</option>
-                <option value="79">Michigan DL</option>
-                <option value="62">Minnesota DL</option>
-                <option value="80">Mississippi DL</option>
-                <option value="63">Missouri DL</option>
-                <option value="66">New Jersey DL</option>
-                <option value="67">New York DL</option>
-                <option value="81">North Carolina DL</option>
-                <option value="68">Ohio DL</option>
-                <option value="70">Pennsylvania DL</option>
-                <option value="71">Rhode Island DL</option>
-                <option value="72">South Carolina DL</option>
-                <option value="73">Texas DL</option>
-                <option value="74">Utah DL</option>
-            </select>
+          <select name="state" id="input-state" class="custom-select form-control">
+              <option value="virginia">virginia</option>
+              <option value="new york">new york</option>
+              <option value="wisconsin state">wisconsin state</option>
+              <option value="washington">washington</option>
+              <option value="vernmont" selected="selected">vernmont</option>
+              <option value="west virginia">west virginia DL</option>
+              <option value="ontario">ontario DL</option>
+              <option value="oklahama">oklahama DL</option>
+              <option value="ohio">ohio DL</option>
+              <option value="north carolina">north carolina DL</option>
+              <option value="rhode island">rhode island DL</option>
+              <option value="new mexico">new mexico DL</option>
+              <option value="new jersey">new jersey DL</option>
+              <option value="new hampshire">new hampshire DL</option>
+              <option value="nevada">nevada DL</option>
+              <option value="nebraska">nebraska DL</option>
+              <option value="montana">montana DL</option>
+              <option value="missouri">missouri DL</option>
+              <option value="mississippi">mississippi DL</option>
+              <option value="minnesota">minnesota DL</option>
+              <option value="new texas DL">new texas DL DL</option>
+              <option value="old texas DL">old texas DL DL</option>
+              <option value="utah">utah DL</option>
+              <option value="alabama">alabama DL</option>
+              <option value="florida">florida DL</option>
+              <option value="colorado">colorado DL</option>
+              <option value="connecticut">connecticut DL</option>
+              <option value="delaware">delaware DL</option>
+              <option value="arkansas">arkansas DL</option>
+              <option value="california">california DL</option>
+              <option value="myoming">myoming DL</option>
+              <option value="massachusetts">massachusetts DL</option>
+              <option value="georgia">georgia DL</option>
+              <option value="idaho">idaho DL</option>
+              <option value="maryland">maryland DL</option>
+              <option value="maine">maine DL</option>
+              <option value="louisiana">louisiana DL</option>
+              <option value="kentucky">kentucky  DL</option>
+              <option value="kansas">kansas DL</option>
+              <option value="lowa">lowa DL</option>
+              <option value="indiana">indiana DL</option>
+              <option value="illinois">illinois DL</option>
+              <option value="hawaii">hawaii DL</option>
+          </select>
         </div>
-          <div class="form-group">
-            <label for="fullname">Social </label>
-            <div class="flex">
-              <select name="contact_type" id="input-method" class="form-control custom-select" style="color:#999999;">
-                  <option value="Select" disabled>Select</option>
-                  <option value="+1 2233445566">WhatsApp</option>
-                  <option value="@idlord">Telegram</option>
-              </select>
-              <div class="col-sm-6">
-                <input type="text" value="" name="contact" placeholder="+1 2233445566" id="input-contact" class="form-control"/>
-              </div>
-            </div>
+          <div class="form-group contact_number">
+            <label for="fullname">Phone Number: </label>
+                <input type="text" value="" name="number" itemid="contact_number" placeholder="+1 2233445566" id="input-contact" class="form-control"/>
           </div>
-          <div class="form-group fullname">
+          <div class="form-group Firstname">
             <label for="Firstname">First Name</label>
-            <input type="text" id="Firstname" placeholder="Enter your First name">
+            <input type="text" name="Firstname" id="Firstname" placeholder="Enter your First name">
           </div>
-          <div class="form-group fullname">
+          <div class="form-group">
             <label for="Middlename">Middle Name<span style="color: var(--red);">(not-required)</span></label>
             <input type="text" id="Middlename" placeholder="Enter your Middle name">
           </div>
-          <div class="form-group fullname">
+          <div class="form-group Lastname">
             <label for="Lastname">Last Name</label>
-            <input type="text" id="Lastname" placeholder="Enter your Last name">
+            <input type="text" id="Lastname" name="Lastname" placeholder="Enter your Last name">
           </div>
           <div class="form-group email">
             <label for="email">Email Address</label>
-            <input type="text" id="email" placeholder="Enter your email address">
+            <input type="email" id="email" placeholder="Enter your email address" required>
           </div>
           <div class="form-group date">
             <label for="date">Birth Date</label>
-            <input type="date" id="date" placeholder="Select your date">
+            <input type="date" id="date" placeholder="Select your date" required>
           </div>
           <div class="form-group gender">
             <label for="gender">Gender</label>
-            <select id="gender">
+            <select id="gender" required>
               <option value="" selected disabled>Select your gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
               <option value="Other">Other</option>
             </select>
           </div>
-          <div class="form-group date">
+          <div class="form-group Height">
             <label for="Height">Height(cm)</label>
-            <input type="number" id="Height" placeholder="160">
+            <input type="number" id="Height" placeholder="160" required>
           </div>
-          <div class="form-group date">
+          <div class="form-group Weight">
             <label for="Weight">Weight(kg)</label>
-            <input type="number" id="Weight" placeholder="50">
+            <input type="number" id="Weight" placeholder="50" required>
           </div>
-          <div class="form-group date">
+          <div class="form-group input-eyes">
               <label for="Weight">Eye Color</label>
-              <select name="eyes_color" id="input-eyes" class="form-control" style="color:#999999;">
+              <select name="eyes_color" id="input-eyes" class="form-control">
                   <option value="" selected disabled>Select eye color</option>
                   <option value="Black">Black</option>
                   <option value="Brown">Brown</option>
@@ -170,9 +173,9 @@
                   <option value="Other">Other</option>
               </select>
           </div>
-          <div class="form-group date">
+          <div class="form-group input-hair">
               <label for="Weight">Hair  Color</label>
-              <select name="hair_color" id="input-hair" class="form-control" style="color:#999999;">
+              <select name="hair_color" id="input-hair" class="form-control" required>
                   <option value="" selected disabled>Select hair color</option>
                   <option value="Bald">Bald</option>
                   <option value="Black">Black</option>
@@ -191,7 +194,7 @@
           </div>
           <div class="form-group flex_jcsb">
             <div>
-              <div id="imgBox"></div>
+              <div id="imgBox" class="image-cover"></div>
               <input type="file" accept="image/*" name="image" id="file" style="display: none;" onchange="loadFile(event)">
               <label for="file" class="upload-icon">Photo On ID</label>
             </div>
@@ -200,11 +203,48 @@
               <label for="Weight" class="upload-icon">Signature On ID <span style="color: var(--red);">(not-required)</span></label>
             </div>
           </div>
+          <div class="flex btns_">
+            <button class="btn checkout" onclick="formOK()">
+              <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Place Order</span>
+            </button>
+          </div>  
       </form>
       <section class="payment_details fixed">
         <h3>YOUR ORDER</h3>
         <hr>
-        <table class="order_table"></table>
+        <table class="order_table">
+          <tr class="flex_jcsb">
+            <th><p>Product :</p></th>
+            <th> <p>Sub Total</p></th>
+          </tr>
+          <tr class="flex_jcsb">
+            <td>New York</td>
+            <td><p id="total-pay"></p></td>
+          </tr>
+          <tr class="flex_jcsb">
+            <td><p>Shipping</p></td>
+            <td>
+              <div class="flex checkList">
+                <input type="radio" name="100" id="ship_100" checked value="100">
+                <label for="ship_100">4 - 5 Business Days:  <b>$100.00</b></label>
+              </div>
+              <div class="flex checkList">
+                <input type="radio" name="110" id="ship_110" value="110">
+                <label for="ship_110">2 - 3 Business Days:  <b>$110.00</b></label>
+              </div>
+              <div class="flex checkList">
+                <input type="radio" name="150" id="ship_150" value="150">
+                <label for="ship_150">Overnight Shipping(24hrs):  <b>$150.00</b></label>
+              </div>
+            </td>
+          </tr>
+          <tr class="flex_jcsb">
+            <td> <p>Total :</p></td>
+            <td><h3 class="total_bill">$ $1900</h3></td>
+          </tr>
+      
+        </table>
         <div class="pay_box item">
           <h2>Pay via Cryptocurrency</h2>
           <h3>₿ Cryptocurrency Payments (<b>BTC And USDT</b>)<h3><br>
@@ -212,19 +252,11 @@
           <p>New to Bitcoin? Don't worry! You can buy bitcoins from many reputable platforms such as <b>Coinbase</b>, <b>Xcoins</b>, and <b>Binance</b>, among others. Once you're set, return here to finalize your purchase.</p>
         </div>
         <br>
-        <div class="flex btns_">
-          <a href="finish.html" onclick="clearCart()">
-          <button class="btn checkout">
-            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-            <span class="span">Place Order</span>
-          </button>
-          </a>
-        </div>  
+
       </section>
     </section>
 
     <footer></footer>
-    <!-- <script src="data/cart.js"></script> -->
     <script src="data/order.js"></script>
     <script src="js/app.js"></script>
     <script src="js/navigation.js"></script>

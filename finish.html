@@ -97,96 +97,104 @@
         <h3>ORDER DETAILS</h3>
         <hr>
         <table class="order_table">
-          <tr class="flex_jcsb">
-            <th><p>Product :</p></th>
-            <th><p>Total</p></th>
-          </tr>
-          <tr class="flex_jcsb">
-            <td>
-              <h4>Document Category:</h4>
-              <p>New York</p>
-              <h4>Document Type:</h4>
-              <p>Fake Document</p>
-            </td>
-            <td>$900</td>
-          </tr>
-          
-          <tr class="flex_jcsb">
-            <td>
-              <h4>Sub Total: </h4>
-            </td>
-            <td>$250.00</td>
-          </tr>
-          
-          <tr class="flex_jcsb">
-            <td><p>Shipping</p></td>
-            <td><p class="tar">7 days shipping:  <b>$100.00</b></p></td>
-          </tr>
-          
-          <tr class="flex_jcsb">
-            <td>
-              <h4>Payment Method: </h4>
-            </td>
-            <td><p>₿ Cryptocurrency <br> Payments (<b>BTC And USDT</b>)</p></td>
-          </tr>
-          <tr class="flex_jcsb">
-            <td> <p>Total :</p></td>
-            <td><h3 class="total_bill">$ 4800</h3></td>
-          </tr>
-          <tr class="flex_jcsb">
-            <td>
-              <h4>First Name:</h4>
-            </td>
-            <td><p>Ndashi</p></td>
-          </tr>
-          <tr class="flex_jcsb">
-            <td>
-              <h4>Last Name:</h4>
-            </td>
-            <td><p>RAmadan</p></td>
-          </tr>
-          <tr class="flex_jcsb">
-            <td>
-              <h4>Date Of Birth:</h4>
-            </td>
-            <td><p>10 01 1999</p></td>
-          </tr>
-          <tr class="flex_jcsb">
-            <td>
-              <h4>Gender:</h4>
-            </td>
-            <td><p>MAle</p></td>
-          </tr>
-          <tr class="flex_jcsb">
-            <td>
-              <h4>Height: </h4>
-            </td>
-            <td><p>185</p></td>
-          </tr>
-          <tr class="flex_jcsb">
-            <td>
-              <h4>Weight</h4>
-            </td>
-            <td><p>69</p></td>
-          </tr>
-          <tr class="flex_jcsb">
-            <td>
-              <h4> Full Address</h4>
-            </td>
-            <td><p>Adadad</p></td>
-          </tr>
-          <tr class="flex_jcsb">
-            <td>
-              <h4>Desired date of issue: </h4>
-            </td>
-            <td><p>10 01 2023</p></td>
-          </tr>
+          <thead>
+            <tr class="flex_jcsb">
+              <th><p>Product :</p></th>
+              <th><p>Total</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="flex_jcsb">
+              <td>
+                <h4>Document Category:</h4>
+                <p id="doc_state"></p>
+                <h4>Document Type:</h4>
+                <p>Fake Document</p>
+              </td>
+              <td>$900</td>
+            </tr>
+            
+            <tr class="flex_jcsb">
+              <td>
+                <h4>Sub Total: </h4>
+              </td>
+              <td>$250.00</td>
+            </tr>
+            
+            <tr class="flex_jcsb">
+              <td><p>Shipping</p></td>
+              <td><p class="tar">7 days shipping:  <b>$100.00</b></p></td>
+            </tr>
+            
+            <tr class="flex_jcsb">
+              <td>
+                <h4>Payment Method: </h4>
+              </td>
+              <td><p>₿ Cryptocurrency <br> Payments (<b>BTC And USDT</b>)</p></td>
+            </tr>
+            <tr class="flex_jcsb">
+              <td> <p>Total :</p></td>
+              <td><h3 class="total_bill">$ 4800</h3></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="order_table">
+          <tbody>
+            <tr class="flex_jcsb">
+              <td>
+                <h4>First Name:</h4>
+              </td>
+              <td><p id="First_name"></p></td>
+            </tr>
+            <tr class="flex_jcsb">
+              <td>
+                <h4>Last Name:</h4>
+              </td>
+              <td><p id="last_name"></p></td>
+            </tr>
+            <tr class="flex_jcsb">
+              <td>
+                <h4>Date Of Birth:</h4>
+              </td>
+              <td><p id="date_ob"></p></td>
+            </tr>
+            <tr class="flex_jcsb">
+              <td>
+                <h4>Gender:</h4>
+              </td>
+              <td><p id="gender_"></p></td>
+            </tr>
+            <tr class="flex_jcsb">
+              <td>
+                <h4>Height: </h4>
+              </td>
+              <td><p id="height_"></p></td>
+            </tr>
+            <tr class="flex_jcsb">
+              <td>
+                <h4>Weight</h4>
+              </td>
+              <td><p id="Weight_"></p></td>
+            </tr>
+            <tr class="flex_jcsb">
+              <td>
+                <h4> Full Address</h4>
+              </td>
+              <td><p>Adadad</p></td>
+            </tr>
+            <tr class="flex_jcsb">
+              <td>
+                <h4>Desired date of issue: </h4>
+              </td>
+              <td><p>10 01 2023</p></td>
+            </tr>
+          </tbody>
         </table>
         <div class="pay_box item finish">
           <h2>Thank you. Your order has been received.</h2>
           <ul>
-            <li>Order number: <b>0101</b></li>
-            <li>Date: <b>Feb 26, 2024</b></li>
+            <li>Order number: <b id="deliveryNum"></b></li>
+            <li>Date: <b id="today_0date"></b></li>
             <li>Total: <b>$450</b></li>
             <li>Payment Method: <p>₿ Cryptocurrency  Payments (<b>BTC And USDT</b>)</p></li>
           </ul>
@@ -197,6 +205,30 @@
 
     <footer></footer>
     <script>
+      let inputStateValues = JSON.parse(localStorage.getItem('Form_rState'));
+      let contactCumberValues = JSON.parse(localStorage.getItem('Form_number'));
+      let firstnameInputValues = JSON.parse(localStorage.getItem('Form_firstName'));
+      let LastNameValues = JSON.parse(localStorage.getItem('Form_LastName'));
+      let emailInputValues = JSON.parse(localStorage.getItem('Form_email'));
+      let dateInputValues = JSON.parse(localStorage.getItem('Form_date'));
+      let genderInputValues = JSON.parse(localStorage.getItem('Form_gender'));
+      let HeightValues = JSON.parse(localStorage.getItem('Form_Height'));
+      let WeightValues = JSON.parse(localStorage.getItem('Form_Weight'));
+      let inputEyesValues = JSON.parse(localStorage.getItem('Form_inputEyes'));
+      let inputHairValues = JSON.parse(localStorage.getItem('Form_inputHair'));
+      let deliveryNum = JSON.parse(localStorage.getItem('Form_deliveryNum'));
+
+      let doc_state = document.getElementById('doc_state').textContent = inputStateValues;
+      let First_name = document.getElementById('First_name').textContent = firstnameInputValues;
+      let last_name = document.getElementById('last_name').textContent = LastNameValues;
+      let date_ob = document.getElementById('date_ob').textContent = dateInputValues;
+      let gender_ = document.getElementById('gender_').textContent = genderInputValues;
+      let height_ = document.getElementById('height_').textContent = HeightValues;
+      let Weight_ = document.getElementById('Weight_').textContent = WeightValues;
+      let deliveryNum_ = document.getElementById('deliveryNum').textContent = deliveryNum;
+
+
+      let today_0date = document.getElementById('today_0date').innerHTML = new Date().toDateString()
       //  Tag  copy automatically
       const cpnTag = document.querySelectorAll('[data-copyTag]');
       const cpnBtn = document.querySelectorAll('.clipboad');
