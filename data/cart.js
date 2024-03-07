@@ -1,18 +1,3 @@
-/**
- * add event on element
- */
-
-const addEventOnElem = function (elem, type, callback) {
-  if (elem.length > 1) {
-    for (let i = 0; i < elem.length; i++) {
-      elem[i].addEventListener(type, callback);
-    }
-  } else {
-    elem.addEventListener(type, callback);
-  }
-}
-
-
 let cart_section = document.querySelector(".cart_section");
 let label = document.querySelector(".payment_details");
 let ShoppingCart = document.getElementById("shopping-cart");
@@ -155,6 +140,8 @@ let TotalAmount = () => {
         return item * search.realPrice;
       })
       .reduce((x, y) => x + y, 0);
+
+      localStorage.setItem('Total_amount', JSON.stringify(amount));
     // console.log(amount);
     label.innerHTML = `
     <h3>Cart Details</h3>
@@ -229,6 +216,7 @@ function addToIdType(arr){
       option.text = item;
       option.value = item;
       id.appendChild(option)
+      localStorage.setItem('IDCategory', )
     })
   })
 }
@@ -268,72 +256,3 @@ function addToIdType(arr){
 const slider = document.querySelectorAll("[data-slider]");
 const nextBtn = document.querySelectorAll("[data-next]");
 const prevBtn = document.querySelectorAll("[data-prev]");
-
-// set the slider default position
-let sliderPos = 0;
-
-// set the number of total slider items
-const totalSliderItems = 3;
-
-// make next slide btn workable
-const slideToNext = function () {
-  sliderPos++;
-  for (let i = 0; i < slider.length; i++) {
-    const sliders = slider[i];
-    sliders.style.transform = `translateX(-${sliderPos}00%)`;
-  }
-//   slider.style.transform = `translateX(-${sliderPos}00%)`;
-  sliderEnd();
-}
-// addEventOnElem(nextBtn, "click", slideToNext);
-
-for (let i = 0; i < nextBtn.length; i++) {
-    const btn = nextBtn[i];
-    btn.addEventListener('click', slideToNext);
-}
-
-// make prev slide btn workable
-const slideToPrev = function () {
-  sliderPos--;
-  for (let i = 0; i < slider.length; i++) {
-      const sliders = slider[i];
-      sliders.style.transform = `translateX(-${sliderPos}00%)`;
-  }
-//   slider.style.transform = `translateX(-${sliderPos}00%)`;
-  sliderEnd();
-}
-// addEventOnElem(prevBtn, "click", slideToPrev);
-for (let i = 0; i < prevBtn.length; i++) {
-    const btn = prevBtn[i];
-    btn.addEventListener('click', slideToPrev);
-}
-
-
-// check when slider is end then what should slider btn do
-function sliderEnd() {
-  if (sliderPos >= totalSliderItems - 1) {
-    for (let i = 0; i < nextBtn.length; i++) {
-        const btn = nextBtn[i];
-        btn.classList.add("disabled");
-    }
-  } else {
-    for (let i = 0; i < nextBtn.length; i++) {
-        const btn = nextBtn[i];
-        btn.classList.remove("disabled");
-    }
-  }
-
-  if (sliderPos <= 0) {
-    for (let i = 0; i < prevBtn.length; i++) {
-        const btn = prevBtn[i];
-        btn.classList.add("disabled");
-    }
-  } else {
-    for (let i = 0; i < prevBtn.length; i++) {
-        const btn = prevBtn[i];
-        btn.classList.remove("disabled");
-    }
-  }
-}
-
-sliderEnd();

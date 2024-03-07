@@ -1,4 +1,4 @@
-let shopItemsData = [
+const shopItemsData = [
   {
     id: 'jfhgbvnscs',
     name: 'virginia',
