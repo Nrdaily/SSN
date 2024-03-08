@@ -252,13 +252,19 @@ footer {
   .nav-link{
     position: absolute;
     top: 100%;
+    width: 100%;
+    height: 100vh;
     right: 0;
     flex-direction: column;
     gap: 0;
     align-items: flex-start;
     transition: all 0.5s;
+    transform: translateX(99%);
     perspective: 1000px;
-    display: none;
+  }
+  .navbar.active .nav-link{
+    display: flex;
+    opacity: 1;
   }
 
   .nav-link li{
@@ -267,6 +273,7 @@ footer {
     transform-origin: right;
     transform: rotateY(-90deg);
     opacity: 0;
+    animation: animation5 1s ease forwards;
   }
   .nav-link.active{
     animation: animation5 1s ease forwards;
