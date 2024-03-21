@@ -63,12 +63,12 @@ footer.innerHTML =`
         </div>
         <div>
             <ul class="flex">
-                <li><a  href="index.html" title="home">Home</a></li>
-                <li><a href="products.html" title="Products">products</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>
-                <li><a href="order.html" title="order">order</a></li>
-                <li><a href="contact.html" title="contact">Contact us</a></li>
-                <li><a href="about.html" title="About us">About us</a></li>
+                <li><a  href="/index.html" title="home">Home</a></li>
+                <li><a href="/products.html" title="Products">products</a></li>
+                <li><a href="/blog.html" title="blog">Blog</a></li>
+                <li><a href="/order.html" title="order">order</a></li>
+                <li><a href="/contact.html" title="contact">Contact us</a></li>
+                <li><a href="/about.html" title="About us">About us</a></li>
                 <li><a href="cart.html" class="cart-btn" title="cart button">
                   <i class="fas fa-shopping-cart"></i> Cart
                 </a></li>
