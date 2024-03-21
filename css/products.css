@@ -37,9 +37,7 @@
   border-radius: 3px;
   width: 250px;
 }
-.payment_info .image img{
-  border-radius: 3px;
-}
+.payment_info .image img{ border-radius: 3px; }
 .payment_info .tag{
   position: relative;
   width: 100%;
@@ -86,9 +84,7 @@
   transform: translateY(-50%) rotate(45deg);
   z-index: -2;
 }
-.numbering{
-  list-style-type: disc !important;
-}
+.numbering{ list-style-type: disc !important; }
 
 
 #search-container input {
@@ -108,12 +104,8 @@
 
 .container { padding-inline: 15px; }
 
-.hide {
-  display: none;
-}
-table tr{
-  border-bottom: 1px solid #f2f2f2;
-}
+.hide { display: none; }
+table tr{ border-bottom: 1px solid #f2f2f2; }
 .img-cover {
   width: 100%;
   height: 100%;
@@ -126,11 +118,50 @@ table tr{
   background: #32323279;
   backdrop-filter: blur(15px);
 }
-.checkList input{
-  width: 20px;
+.checkList input{ width: 20px; }
+.pay_box.finish h2{ color: rgb(5, 170, 5); }
+
+
+#view-product{position: relative; }
+.id_desc{
+  position: fixed;
+  top: 0;left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #32323279;
+  backdrop-filter: blur(15px);
+  color: #f2f2f2;
+  overflow-y: scroll;
+  display: none;
 }
-.pay_box.finish h2{
-  color: rgb(5, 170, 5);
+.id_desc.active{
+  display: block;
+  animation: id_desc_1 2s ease-in-out forwards;
+}
+@keyframes id_desc_1 {
+  from{
+    opacity: 0.1;
+    transform: translateX(-100%);
+  }
+  80%{ opacity: 0.6; }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.closeX{
+  position: absolute;
+  top: 3%;right: 3%;
+  font-size: 1rem;
+  height: 30px;
+  width: 30px;
+  color: #f2f2f2;
+  border-radius: 50%;
+  background: #a01616;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
 }
 
 #imgBox{
@@ -139,9 +170,7 @@ table tr{
   background: #f2f2f279;
   border-radius: 3px;
 }
-.pay_box p{
-  opacity: 0.8;
-}
+.pay_box p{ opacity: 0.8; }
 .pay_box b{
   opacity: 1;
   font-weight: 800;
@@ -174,9 +203,7 @@ table tr{
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
-.shop_con:hover{
-  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
-}
+.shop_con:hover{ box-shadow: 0 0 15px 0 rgba(0,0,0,0.2); }
 .shop_con .image{
   position: absolute;
   top: 0;
@@ -190,9 +217,7 @@ table tr{
   object-fit: cover;
   transition: all 0.3s ease;
 }
-.shop_con:hover .image img{
-  transform: scale(1.1);
-}
+.shop_con:hover .image img{ transform: scale(1.1); }
 .shop_con .card-content{
   position: relative;
   height: 100%;
@@ -207,9 +232,7 @@ table tr{
   box-shadow: -1px -1px 6px rgba(0,0,0,0.1);
   transition: bottom 0.3s ease;
 }
-.shop_con:hover .card-content .wrapper{
-  bottom: 0px;
-}
+.shop_con:hover .card-content .wrapper{ bottom: 0px; }
 .wrapper .title{
   text-transform: capitalize;
   font-size: 18px;
@@ -269,15 +292,9 @@ table tr{
   cursor: pointer;
   position: relative;
 }
-.content .colour-value span.white{
-  background: lightgrey;
-}
-.content .colour-value span.blue{
-  background: var(--red);
-}
-.content .colour-value span.yellow{
-  background: #EAA523;
-}
+.content .colour-value span.white{ background: lightgrey; }
+.content .colour-value span.blue{ background: var(--red); }
+.content .colour-value span.yellow{ background: #EAA523; }
 .content .colour-value span.active:after{
   position: absolute;
   content: "";
@@ -289,12 +306,8 @@ table tr{
   border: 2px solid var(--red);
   border-radius: 50%;
 }
-.content .colour-value span.white.active:after{
-  border-color: lightgrey;
-}
-.content .colour-value span.yellow.active:after{
-  border-color: #EAA523;
-}
+.content .colour-value span.white.active:after{ border-color: lightgrey; }
+.content .colour-value span.yellow.active:after{ border-color: #EAA523; }
 .wrapper .btns{
   display: flex;
   /* height: 40px; */
@@ -316,9 +329,7 @@ table tr{
   text-transform: uppercase;
   cursor: pointer;
 }
-.wrapper .btns button a{
-  color: #fff;
-}
+.wrapper .btns button a{ color: #fff; }
 
 
 
@@ -330,9 +341,7 @@ table tr{
   position: sticky;
   top: 3%;right: 0;
 }
-.payment_details{
-  margin-top: 80px;
-}
+.payment_details{ margin-top: 80px; }
 .payment_details .flex_jcsb{
   padding: 1rem;
   gap: 20px;
@@ -357,6 +366,7 @@ table tr{
   display: flex;
   transition: var(--transition-2);
 }
+.slider-banner .product-banner,
 .cart-slider .product-banner{
   min-width: 100%;
   max-height: 300px;
@@ -382,6 +392,7 @@ table tr{
 }
 
 .product-content {
+  position: relative;
   padding-block: 24px 50px;
   padding-inline: 8px;
 }
@@ -442,9 +453,7 @@ table tr{
   cursor: pointer;
   /* border-radius: 50%; */
 }
-.product-content .flex{
-  position: relative;
-}
+.product-content .flex{ position: relative; }
 .price-abs{
   position: absolute;
   top: 5px;right: 10px;
@@ -461,12 +470,8 @@ table tr{
   border-radius: 10px;
   gap: 15px;
 }
-.btns_{
-  justify-content: center;
-}
-.cart_section button:nth-child(2){
-  background-color: var(--red);
-}
+.btns_{ justify-content: center; }
+.cart_section button:nth-child(2){ background-color: var(--red); }
   
 .add-cart-btn {
   width: 100%;
@@ -479,9 +484,7 @@ table tr{
 .add-cart-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .add-cart-btn:is(:hover, :focus) { background-color: var(--footer-background); }
-.cart_section.flex{
-  flex-direction: column;
-}
+.cart_section.flex{ flex-direction: column; }
 
 /**
  * responsive for larger than 575px screen
@@ -499,9 +502,7 @@ table tr{
     max-width: 400px;
     margin-inline: auto;
   }
-  .cart_section, .containe {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .cart_section, .containe { grid-template-columns: repeat(2, 1fr); }
     
   
   /**
@@ -542,9 +543,7 @@ table tr{
       margin: 5px 0;
     }
 
-    .cart_section .price-abs{
-      font-size: 2rem;
-    }
+    .cart_section .price-abs{ font-size: 2rem; }
     
   /**
    * PRODUCT
@@ -552,9 +551,7 @@ table tr{
 
   .product { margin-block: 75px 100px; }
 
-  .cart_section .product .container {
-    gap: 50px;
-  }
+  .cart_section .product .container { gap: 50px; }
   .product .container {
     grid-template-columns: 1fr 1fr;
     align-items: center;
