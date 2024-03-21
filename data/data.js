@@ -8,7 +8,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0007.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0008.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'ioytrhndcv',
@@ -19,7 +18,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0011.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0010.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'wuefbncxbsn',
@@ -30,7 +28,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0013.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0014.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'thyfhcbcv',
@@ -41,7 +38,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0017.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0016.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'sdvvdfv',
@@ -52,7 +48,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0020.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0019.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'gdfhdg',
@@ -63,7 +58,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0023.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0021.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'wewrfwe',
@@ -74,7 +68,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0026.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0025.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'hgfuyu',
@@ -85,7 +78,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0028.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0029.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'potjbbb',
@@ -96,7 +88,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0031.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0032.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'pkkjkjt',
@@ -107,7 +98,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0034.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0035.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'pjsssre',
@@ -118,7 +108,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0038.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0037.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'opiejve',
@@ -129,7 +118,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0041.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0042.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'mmnnege',
@@ -140,7 +128,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0045.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0043.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'egghfghfh',
@@ -151,7 +138,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0048.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0047.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dkjfkdjbv',
@@ -162,7 +148,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0051.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0050.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'djidihd',
@@ -173,7 +158,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0054.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0053.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dgdgqq',
@@ -184,7 +168,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0057.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'qrgrgh',
@@ -195,7 +178,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0060.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0059.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'ergyth',
@@ -206,7 +188,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0063.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0062.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'zzcvsegg',
@@ -217,7 +198,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0066.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0064.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'wgrsdfg',
@@ -228,7 +208,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0070.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0069.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'wertwfe',
@@ -239,7 +218,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240212-WA0073.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0072.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'fgdlle',
@@ -250,7 +228,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0000.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0075.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'bsdfbdfgb',
@@ -261,7 +238,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0073.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0072.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfhhh',
@@ -272,7 +248,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0001.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0070.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfgdvbdfgdf',
@@ -283,7 +258,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0068.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0069.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfgdgdfgdf',
@@ -294,7 +268,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0065.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0067.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'ghfhgbfbf',
@@ -305,7 +278,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0002.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0063.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfgdfgfb',
@@ -316,7 +288,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0060.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0061.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfgdhfn',
@@ -327,7 +298,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0056.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0058.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'fghdghbfhdf',
@@ -338,7 +308,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0054.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0055.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: '2afdfdsfgsd3',
@@ -349,7 +318,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0051.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0052.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfsgfdhgd',
@@ -360,7 +328,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0003.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0050.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'ghfgjhyfj',
@@ -371,7 +338,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0046.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0047.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfsdgfdgdf',
@@ -382,7 +348,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0043.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0044.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'sdfsdgfdsg',
@@ -393,7 +358,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0040.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0041.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfsdgfgbfd',
@@ -404,7 +368,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0038.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0037.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfsdgfdsg',
@@ -415,7 +378,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0034.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0035.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dsgsfdgdfsgsd',
@@ -426,7 +388,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0031.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0032.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'fdgddfgdffd',
@@ -437,7 +398,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0027.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0028.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dgfdfghfghj',
@@ -448,7 +408,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0026.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0025.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfhghfgh',
@@ -459,7 +418,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0022.jpg',
     img_Scan: '../img/IDs/IMG-20240215-WA0023.jpg',
     realPrice: 900,
-    fakePrice: 120,
   },
   {
     id: 'dfvgdfbgrfbb',
@@ -470,7 +428,6 @@ const shopItemsData = [
     img_Back: '../img/IDs/IMG-20240215-WA0019.jpg',
     img_Scan: '../img/IDs/IMG-20240212-WA0047.jpg',
     realPrice: 900,
-    fakePrice: 120,
   } /*,
   {
     id: 'sdfgdfbdgbd',
@@ -481,7 +438,6 @@ const shopItemsData = [
     img_Back: '../',
     img_Scan: '../',
     realPrice: 900,
-    fakePrice: 120,
   },
   */
 ];

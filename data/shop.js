@@ -1,5 +1,6 @@
 // import { shopItemsData } from "./data.js";
 
+let dataP_desc = document.querySelectorAll("[data-p_desc_p]");
 let shop = document.getElementById("shop");
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
@@ -42,7 +43,7 @@ let generateShop = () => {
           </div>
           <div class="btns">
             <button><a href="cart.html">Buy Now</a></button>
-            <button><a href="products_view.html">View More</a></button>
+           <button data-open_details data-name="${id}">View More</button>
           </div>
         </div>
       </div>
@@ -51,20 +52,24 @@ let generateShop = () => {
     })
     .join(""));
 };
+console.log(shopItemsData.length)
 generateShop();
+
+dataP_desc.forEach(p => {
+  p.textContent = `Georgia, Georgian Sakartvelo, nation of Transcaucasia situated at the eastern finish of the Black Sea on the southern flanks of the fundamental peak of the Greater Caucasus Mountains. It is limited on the north and upper east by Russia, on the east and southeast by Azerbaijan, on the south by Armenia and Turkey, and on the west by the Black Sea. Georgia incorporates three ethnic territories: Abkhazia, in the northwest (head city Sokhumi); Ajaria, in the southwest (head city Batʿumi); and South Ossetia, in the north (head city Tskhinvali). The capital of Georgia is Tbilisi (Tiflis).
+
+  The underlying foundations of the Georgian public broaden somewhere down ever; their social legacy is similarly antiquated and rich. During the middle age time frame, an incredible Georgian realm existed, arriving at its stature between the tenth and thirteenth hundreds of years. After an extensive stretch of Turkish and Persian mastery, Georgia was attached by the Russian Empire in the nineteenth century. An autonomous Georgian state existed from 1918 to 1921, when it was joined into the Soviet Union. In 1936 Georgia turned into a constituent (association) republic and proceeded as such until the breakdown of the Soviet Union. During the Soviet time frame, the Georgian economy was modernized and expanded. One of the most autonomy disapproved of republics, Georgia announced power on November 19, 1989, and freedom on April 9, 1991.
+  
+  The 1990s were a time of insecurity and common agitation in Georgia, as the first postindependence government was toppled and nonconformist developments arose in South Ossetia and Abkhazia.
+  
+  We are the only and one agency in the world that can provide the Real diver’s license of Georgia online. If you have tried several times to get a real driver’s license of Georgia. but didn’t succeed after long documentation, written and practical process so don’t worry because now you are in the right place, You are just a few steps away from a real driver’s license of Georgia. Follow the procedure and place an order for a real driver’s license to get it at your doorstep in the next few days. Our prices are reasonable.
+  
+  We are also providing a fake driver’s license in Georgia. If you can’t afford the fees for a real driver’s license of Georgia so our fake driver’s license is also of high quality and non-detectable. Order a fake driver’s license today and drive on Georgia‘s roads from next week without any hassle. We use fast sources for the delivery because we respect the need of our customers.`;
+})
+
 
 //parameter passed from button (Parameter same as category)
 function filterProduct(value) {
-  //Button class code
-  // let buttons = document.querySelector(".button-value");
-  // buttons.forEach((button) => {
-  //   //check if value equals innerText
-  //   if (value.toUpperCase() == button.innerText.toUpperCase()) {
-  //     button.classList.add("active");
-  //   } else {
-  //     button.classList.remove("active");
-  //   }
-  // });
 
   //select all cards
   let elements = document.querySelectorAll(".shop_con");
@@ -230,3 +235,26 @@ let calculation = () => {
 };
 
 calculation();
+
+const closeX = document.querySelectorAll('.closeX').forEach(btn => {
+  btn.addEventListener('click', () => {
+    id_descBtn.forEach(id_desc => {
+      id_desc.classList.remove('active');
+      document.body.style.overflowY = 'auto';
+    })
+  })
+})
+const id_descBtn = document.querySelectorAll('.id_desc')
+
+document.querySelectorAll('[data-open_details]').forEach(btn =>{
+  btn.onclick = () =>{
+    let name = btn.getAttribute('data-name');
+    id_descBtn.forEach(id_desc =>{
+      let target = id_desc.getAttribute('data-target');
+      if(name == target){
+        id_desc.classList.add('active');
+        document.body.style.overflowY = 'hidden';
+      }
+    });
+  };
+});
